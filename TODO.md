@@ -6,7 +6,7 @@
 
 Silahkan setup project aplikasi kamu:
 
-- [ ] Pilih tema sesuai kesepakatan bersama  instructor, tuliskan dalam README github kamu
+- [v] Pilih tema sesuai kesepakatan bersama instructor, tuliskan dalam README github kamu
 - [ ] Membuat layout aplikasi sesuai tema yang dipilih
 - [ ] Membuat initial data/seeder sesuai struktur data yang ditentukan (Kalian bisa check `db.json` sebagai referensi atau bisa digunakan sebagai data awal)
   - [ ] Halaman auth
@@ -31,14 +31,14 @@ Silahkan setup project aplikasi kamu:
 
 ### NEXT.js Intro
 
-- [ ] Setup NEXT.js project yang menggunakan typescript
-- [ ] Convert halaman-halaman dan komponen-komponen yang dibuat sebelumnya menjadi  pages dan components pada NEXT.js:
-  - [ ] Halaman register: /register
-  - [ ] Halaman login: /login
+- [v] Setup NEXT.js project yang menggunakan typescript
+- [ ] Convert halaman-halaman dan komponen-komponen yang dibuat sebelumnya menjadi pages dan components pada NEXT.js:
+  - [v] Halaman register: /register
+  - [v] Halaman login: /login
   - [ ] Halaman home: /
-    - [ ] Komponen Banner
-    - [ ] Komponen Detail info Ecommerce
-    - [ ] Komponen Featured Product (5-10 product) + “see-all”
+    - [v] Komponen Banner
+    - [v] Komponen Detail info Ecommerce
+    - [v] Komponen Featured Product (5-10 product) + “see-all”
   - [ ] Halaman product: /products
     - [ ] Komponen List Product
     - [ ] Komponen Search
@@ -80,11 +80,11 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 - [ ] Lakukan wiring dan validasi terhadap halaman-halaman dan komponen-komponen yang sudah dibuat.
   - [ ] Halaman register: /register
     - [ ] username:string (validation: required, unique)
-    - [ ] email:string  (validation: required, unique, email format)
-    - [ ] password:string  (validation: required, length min 5)
+    - [ ] email:string (validation: required, unique, email format)
+    - [ ] password:string (validation: required, length min 5)
   - [ ] Halaman login: /login
-    - [ ] email:string  (validation: required, email format)
-    - [ ] password:string  (validation: required)
+    - [ ] email:string (validation: required, email format)
+    - [ ] password:string (validation: required)
   - [ ] Halaman home: / (SSR)
     - [ ] Halaman product: /products
     - [ ] Fitur List Product
@@ -92,17 +92,17 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
     - [ ] Fitur Pagination
     - [ ] Untuk menerapakan infinite scroll salah satu package yang bisa digunakan: react-infinite-scroll
   - [ ] Fitur Add to Wishlist
-    - [ ] userId: ObjectId  (validation: required)
-    - [ ] productId: ObjectId  (validation: required)
+    - [ ] userId: ObjectId (validation: required)
+    - [ ] productId: ObjectId (validation: required)
   - [ ] Halaman detail product: /products/:slug
     - [ ] Fitur Add to Wishlist
-      - [ ] userId: ObjectId  (validation: required)
-      - [ ] productId: ObjectId  (validation: required)
+      - [ ] userId: ObjectId (validation: required)
+      - [ ] productId: ObjectId (validation: required)
   - [ ] Halaman Wishlist
     - [ ] Fitur List Wishlist
     - [ ] Fitur Remove to Wishlist
-      - [ ] userId: ObjectId  (validation: required)
-      - [ ] productId: ObjectId  (validation: required)
+      - [ ] userId: ObjectId (validation: required)
+      - [ ] productId: ObjectId (validation: required)
 
 ### NEXT.js Auth
 
