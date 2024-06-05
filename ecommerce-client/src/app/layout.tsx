@@ -1,7 +1,8 @@
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
+import BootstrapClient from "@/components/BootstrapClient";
+import Navbar from "@/components/Navbar";
 // import BootstrapClient from '@/components/BootstrapClient.js';
 // import "./globals.css";
 
@@ -19,9 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
-      <body className={inter.className}>{children}
-      {/* <BootstrapClient></BootstrapClient> */}
+      <body className={inter.className}>
+        <Navbar></Navbar>
+        {children}
+        <BootstrapClient></BootstrapClient>
       </body>
     </html>
   );

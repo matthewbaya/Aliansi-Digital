@@ -56,9 +56,9 @@ Silahkan setup project aplikasi kamu:
 
 Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang sudah dibuat dengan detail sebagai berikut:
 
-- [ ] Halaman register: /register
-- [ ] Halaman login: /login
-- [ ] Halaman home: / (SSR)
+- [v] Halaman register: /register
+- [v] Halaman login: /login
+- [v] Halaman home: / (SSR)
 - [ ] Halaman product: /products (CSR)
   - [ ] Komponen List Product (CSR)
   - [ ] Komponen Search (CSR)

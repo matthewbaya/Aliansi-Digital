@@ -1,11 +1,15 @@
-import Banner from "@/components/Banner";
-import FeaturedProduct from "@/components/FeaturedProduct";
+import Banner from "@/components/home-components/Banner";
+import DetailInfo from "@/components/home-components/DetailInfo";
+import FeaturedProduct from "@/components/home-components/FeaturedProduct";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-center">Home</h1>
       <Banner></Banner>
+      <DetailInfo></DetailInfo>
+      <FeaturedProduct></FeaturedProduct>
+      <FeaturedProduct></FeaturedProduct>
+      <FeaturedProduct></FeaturedProduct>
       <FeaturedProduct></FeaturedProduct>
     </>
   );

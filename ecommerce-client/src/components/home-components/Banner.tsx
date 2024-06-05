@@ -1,7 +1,9 @@
 export default function Banner() {
   return (
     <>
-      <h1>Banner</h1>
+      <section>
+        <img src="https://digitalalliance.co.id/wp-content/uploads/2024/05/Banner-Shopee.webp"></img>
+      </section>
     </>
   );
 }
