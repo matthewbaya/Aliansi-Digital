@@ -12,9 +12,14 @@ export default function ProductCard() {
           Some quick example text to build on the card title and make up the
           bulk of the card content.
         </p>
-        <a href="#!" className="btn btn-primary" data-mdb-ripple-init="">
-          Button
-        </a>
+        <div className="d-flex justify-content-between">
+          <a href="#!" className="btn btn-primary" data-mdb-ripple-init="">
+            Button
+          </a>
+          <a href="#" className="btn btn-primary">
+            add to wishlist
+          </a>
+        </div>
       </div>
     </div>
   );
