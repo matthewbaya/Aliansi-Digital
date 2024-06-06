@@ -1,6 +1,8 @@
 import { getCollection } from "../config";
-import { hashPassword } from "../helpers/bcrypt";
+import { comparePassword, hashPassword } from "../helpers/bcrypt";
 import { z } from "zod";
+import { signToken } from "../helpers/jwt";
+import { ObjectId } from "mongodb";
 
 type NewUser = {
   username: string;
@@ -8,8 +10,27 @@ type NewUser = {
   password: string;
 };
 
+type User = {
+  _id: ObjectId;
+  username: string;
+  email: string;
+  password: string;
+};
+
+type LoginUser = {
+  email: string;
+  password: string;
+};
+
+const LoginUserSchema = z.object({
+  email: z.string({ required_error: "Email cannot be empty" }),
+  password: z.string({ required_error: "Password cannot be empty" }),
+});
+
 const NewUserSchema = z.object({
-  username: z.string({ required_error: "Username cannot be empty" }),
+  username: z
+    .string({ required_error: "Username cannot be empty" })
+    .email({ message: "Invalid email address" }),
   email: z
     .string({ required_error: "Email cannot be empty" })
     .email({ message: "Invalid email address" }),
@@ -20,6 +41,28 @@ const NewUserSchema = z.object({
 class UserModel {
   static collection() {
     return getCollection("Users");
+  }
+
+  static async loginUser(loginUser: LoginUser) {
+    const parseResult = LoginUserSchema.safeParse(loginUser);
+    if (!parseResult.success) {
+      console.log(parseResult.error);
+      throw parseResult.error;
+    }
+    const user = await this.collection().findOne({
+      email: loginUser.email,
+    });
+    console.log(user);
+
+    if (!user) {
+      throw { name: "InvalidLogin" };
+    }
+    const passwordVal = comparePassword(loginUser.password, user.password);
+    if (!passwordVal) {
+      throw { name: "InvalidLogin" };
+    }
+    const access_token = signToken(user);
+    return access_token;
   }
 
   static async registerUser(newUser: NewUser) {
@@ -41,8 +84,6 @@ class UserModel {
     });
     return user;
   }
-
-  static async loginUser() {}
 }
 
 export default UserModel;
