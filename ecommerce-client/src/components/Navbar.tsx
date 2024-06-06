@@ -52,6 +52,11 @@ export default function Navbar() {
                   Mousepads
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/wishlist">
+                  Wishlist
+                </Link>
+              </li>
             </ul>
             {/* Left links */}
           </div>

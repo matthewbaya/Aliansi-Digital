@@ -35,15 +35,15 @@ Silahkan setup project aplikasi kamu:
 - [ ] Convert halaman-halaman dan komponen-komponen yang dibuat sebelumnya menjadi pages dan components pada NEXT.js:
   - [v] Halaman register: /register
   - [v] Halaman login: /login
-  - [ ] Halaman home: /
+  - [v] Halaman home: /
     - [v] Komponen Banner
     - [v] Komponen Detail info Ecommerce
     - [v] Komponen Featured Product (5-10 product) + “see-all”
-  - [ ] Halaman product: /products
-    - [ ] Komponen List Product
-    - [ ] Komponen Search
+  - [v] Halaman product: /products
+    - [v] Komponen List Product
+    - [v] Komponen Search
     - [ ] Komponent Pagination
-    - [ ] Komponen Add to wishlist
+    - [v] Komponen Add to wishlist
   - [ ] Halaman detail product: /products/:slug
     - [ ] Komponen Add to wishlist
   - [ ] Halaman wishlist: /wishlist
@@ -76,12 +76,12 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 
 ### NEXT.js Route Handler
 
-- [ ] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
+- [v] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
 - [ ] Lakukan wiring dan validasi terhadap halaman-halaman dan komponen-komponen yang sudah dibuat.
   - [ ] Halaman register: /register
     - [ ] username:string (validation: required, unique)
-    - [ ] email:string (validation: required, unique, email format)
-    - [ ] password:string (validation: required, length min 5)
+    - [v] email:string (validation: required, unique, email format)
+    - [v] password:string (validation: required, length min 5)
   - [ ] Halaman login: /login
     - [ ] email:string (validation: required, email format)
     - [ ] password:string (validation: required)
