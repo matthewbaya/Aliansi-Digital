@@ -7,6 +7,4 @@ export type Product = {
   tags: string[];
   thumbnail: string;
   images: string[];
-  createdAt: string;
-  updatedAt: string;
 };

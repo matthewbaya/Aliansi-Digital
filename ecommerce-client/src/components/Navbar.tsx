@@ -33,6 +33,11 @@ export default function Navbar() {
             {/* Left links */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
+                <Link className="nav-link" href="/products">
+                  All Products
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" href="/products/mice">
                   Mice
                 </Link>

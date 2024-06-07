@@ -7,10 +7,12 @@ export default function Home() {
     <>
       <Banner></Banner>
       <DetailInfo></DetailInfo>
-      <FeaturedProduct></FeaturedProduct>
-      <FeaturedProduct></FeaturedProduct>
-      <FeaturedProduct></FeaturedProduct>
-      <FeaturedProduct></FeaturedProduct>
+      <div className="container d-flex flex-wrap gap-5 justify-content-center">
+        <FeaturedProduct></FeaturedProduct>
+        <FeaturedProduct></FeaturedProduct>
+        <FeaturedProduct></FeaturedProduct>
+        <FeaturedProduct></FeaturedProduct>
+      </div>
     </>
   );
 }

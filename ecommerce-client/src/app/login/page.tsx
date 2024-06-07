@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <>
-      <div className="w-50 container">
-        <h1 className="display-1 text-center">Hello</h1>
+      <div className="w-50 container border border-rounded">
+        <h1 className="display-1 text-center">Login</h1>
         <form>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">

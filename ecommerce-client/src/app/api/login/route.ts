@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const access_token = await UserModel.loginUser(body);
     return Response.json(
       {
-        message: "Login Succesfull",
+        message: "Login Succesful",
         access_token: access_token,
       },
       { status: 200 }

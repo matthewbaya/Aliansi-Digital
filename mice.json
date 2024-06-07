@@ -1,0 +1,225 @@
+[
+  {
+    "name": "DA Luna X2 White Edition",
+    "slug": "da-luna-x2-white-edition",
+    "description": {
+      "specification": {
+        "Model": "Luna X2",
+        "Color": "White",
+        "Shape": "Ergonomic Design",
+        "No. of Buttons": 10,
+        "USB Cable Length": "175 cm",
+        "Switch": "Huano",
+        "Switch Life": "20 Million Click Lifecycle",
+        "Weight": "108g±5g (Without Cable)",
+        "Dimension": "138 (L) x 78 (W) x 44 (H) mm"
+      },
+
+      "sensor": {
+        "Sensor Name": "Pixart PMW 3327",
+        "Sensor Type": "Optical",
+        "DPI": "6.200 DPI",
+        "Max. Polling Rate": "1.000 Hz",
+        "Max. Tracking Speed": "220 ips",
+        "Max. Acceleration": "30g"
+      }
+    },
+    "excerpt": "DA Luna X2 White Edition",
+    "price": 999000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2023/07/luna-x2-white-01-1024x1024.webp",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-x2-white-02-qjckuwgljnhxeb95drul9aiakrcfsjv4z4o2c2vgqw.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-x2-white-03-qjckuwgljnhxeb95drul9aiakrcfsjv4z4o2c2vgqw.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-x2-white-04-qjckuwgrmxg3gc1tgc6ftoq3rgel3bxqe3lx339kwg.webp"
+    ]
+  },
+
+  {
+    "name": "DA LUNA RGB V2",
+    "slug": "da-luna-rgb-v2",
+    "description": {
+      "specification": {
+        "Model": "Luna RGB 2023 Edition",
+        "Color": "Black / White",
+        "Shape": "Ergonomic Design",
+        "No. of Buttons": 6,
+        "USB Cable Length": "160cm",
+        "Gold-Plated USB": "Yes",
+        "Light Color": "RGB",
+        "Switch": "Huano",
+        "Switch Life": "10 Million Click Lifecycle",
+        "Weight": "60g (without cable)",
+        "Dimension": "126(L) x 63(W) x 40(H) mm"
+      },
+
+      "sensor": {
+        "Sensor Name": "825IC",
+        "Sensor Type": "Optical",
+        "DPI": "800 – 12.800 DPI",
+        "Maximum Polling Rate": "1.000 Hz",
+        "Maximum Frame Rate": "7.000 fps",
+        "Maximum Tracking Speed": "60 ips",
+        "Maximum Acceleration": "20 g"
+      }
+    },
+    "excerpt": "DA LUNA RGB V2",
+    "price": 699000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2023/07/luna-2023-edition-01-1024x1024.webp",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/2023/07/luna-2023-edition-01-1024x1024.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-2023-edition-02-qjckuwgljnhxeb95drul9aiakrcfsjv4z4o2c2vgqw.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-2023-edition-04-qjckuwgrmxg3gc1tgc6ftoq3rgel3bxqe3lx339kwg.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-2023-edition-03-qjckuwgljnhxeb95drul9aiakrcfsjv4z4o2c2vgqw.webp"
+    ]
+  },
+  {
+    "name": "DA CARBINE",
+    "slug": "da-carbine",
+    "description": {
+      "specification": {
+        "Model": "Carbine",
+        "Color": "Dark",
+        "Shape": "Ergonomic Design",
+        "No. of Buttons": 6,
+        "USB Cable Length": "180 cm",
+        "Switch": "Huano",
+        "Switch Life": "10 Million Click Lifecycle",
+        "Weight": "138 g (Without Cable)",
+        "Dimension": "117 (L) x 60.1 (W) x 39.2 (H) mm"
+      },
+      "sensor": {
+        "Sensor Name": "Pixart PMW 3325",
+        "Sensor Type": "Optical",
+        "DPI": "800 – 10.000 DPI",
+        "Max. Frame Rate": "5.000 fps",
+        "Max. Polling Rate": "1.000 Hz",
+        "Max. Tracking Speed": "100 ips",
+        "Max. Acceleration": "20g",
+        "Max. Current Consumption": "100 mA"
+      }
+    },
+    "excerpt": "DA CARBINE",
+    "price": 399000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2021/04/Carbine-Dark-01-1024x1024.jpg",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/2021/04/Carbine-Dark-01-1024x1024.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/Carbine-Dark-02-qjckujauvyzwvrs9im5tadtu9d5assew9bj9m7ez60.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/Carbine-Dark-03-qjckujauvyzwvrs9im5tadtu9d5assew9bj9m7ez60.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/Carbine-Dark-04-qjckujb0z8y2xskxl6hnus1ng27g3khhoah4d7t3bk.jpg"
+    ]
+  },
+  {
+    "name": "DA LUNA SPORT",
+    "slug": "da-luna-sport",
+    "description": {
+      "specification": {
+        "Model": "Luna Sport",
+        "Color": "White + Multicolor",
+        "Shape": "Ergonomic Gaming",
+        "No. of Buttons": 7,
+        "USB Cable Length": "1.8m Braided Cable",
+        "Gold-Plated USB": "Yes",
+        "Light Color": "RGB",
+        "Switch": "Huano",
+        "Switch Life": "10 Million Click Lifecycle",
+        "Weight": "106g (without cable)",
+        "Dimension": "126 (L) x 65 (W) x 41 (H) mm"
+      },
+      "sensor": {
+        "Sensor Name": "Pixart PMW 3327",
+        "Sensor Type": "Advance Optical Tracking",
+        "DPI": "up to 6.400 DPI",
+        "Maximum Polling Rate": "1.000 Hz",
+        "Maximum Frame Rate": "6.200 fps",
+        "Maximum Tracking Speed": "220 ips",
+        "Maximum Acceleration": "30 g"
+      }
+    },
+    "excerpt": "DA LUNA SPORT",
+    "price": 275000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2022/06/luna-sport-01-1024x1024.webp",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/2022/06/luna-sport-01-1024x1024.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-sport-03-qjckusp8sbcs3velzq82zbgg77uyxrg7mm24ez11fs.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-sport-03-qjckusp8sbcs3velzq82zbgg77uyxrg7mm24ez11fs.webp",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/luna-sport-04-qjckuspevlay5w7a2ajxjpo9dwx48jit1kzz5zf5lc.webp"
+    ]
+  },
+  {
+    "name": "DA LUNA GALAXY",
+    "slug": "da-luna-galaxy",
+    "description": {
+      "specification": {
+        "Model": "Luna Galaxy Series",
+        "Color": "White",
+        "Shape": "Ambidextrous",
+        "No. of Buttons": 9,
+        "USB Cable Length": "1.7m USB Golden Plated",
+        "Light Color": "RGB",
+        "Switch": "Huano",
+        "Switch Life": "5 Million Click Lifecycle",
+        "Weight": "82.5g(±2g) Without Cable"
+      },
+      "sensor": {
+        "Sensor Name": "Sunplus 6651B",
+        "Sensor Type": "Optical",
+        "DPI": "Up to 6400 DPI",
+        "Max. Frame Rate": "6000 fps",
+        "Max. Polling Rate": "1000Hz",
+        "Max. Tracking Speed": "66 ips",
+        "Max. Acceleration": "22.5 g"
+      }
+    },
+    "excerpt": "DA LUNA GALAXY",
+    "price": 229000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2021/04/LunaGalaxyWhite_01.jpg",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/2021/04/LunaGalaxyWhite_01.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/LunaGalaxyWhite_02-qjckuk8p2t177dqwd4kfuvlaur0o0himlg6r3hdkzs.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/LunaGalaxyWhite_03-qjckuk8p2t177dqwd4kfuvlaur0o0himlg6r3hdkzs.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/LunaGalaxyWhite_04-qjckuk8v62zd9ejkfowaf9t41g2tb9l80f4luhrp5c.jpg"
+    ]
+  },
+  {
+    "name": "DA G PREMIUM",
+    "slug": "da-g-premium",
+    "description": {
+      "specification": {
+        "Model": "G Premium",
+        "Color": "Black",
+        "Shape": "Ergonomic Design",
+        "Dimension": "123(L) x 73(W) x 44(H) mm",
+        "No. of Buttons": 7,
+        "Switch": "Omron",
+        "No. of Game Profiles": 2,
+        "USB Cable Length": "1.8m",
+        "Switch life": "20 Million Click Lifecycle",
+        "Weight In-Design": "100g",
+        "Gold-Plated USB": "Yes",
+        "Light Color": "RGB"
+      },
+      "sensor": {
+        "Sensor Name": "P3360",
+        "Sensor Type": "Optical",
+        "DPI": "12000 DPI",
+        "Default DPI": "1600 DPI",
+        "Polling Rate": "1000 Hz"
+      }
+    },
+    "excerpt": "DA G PREMIUM",
+    "price": 455000,
+    "tags": ["mouse"],
+    "thumbnail": "https://digitalalliance.co.id/wp-content/uploads/2021/04/G-Premium-01.jpg",
+    "images": [
+      "https://digitalalliance.co.id/wp-content/uploads/2021/04/G-Premium-01.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/G-Premium-02-qjckujauvyzwvrs9im5tadtu9d5assew9bj9m7ez60.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/G-Premium-03-qjckujauvyzwvrs9im5tadtu9d5assew9bj9m7ez60.jpg",
+      "https://digitalalliance.co.id/wp-content/uploads/elementor/thumbs/G-Premium-04-qjckujb0z8y2xskxl6hnus1ng27g3khhoah4d7t3bk.jpg"
+    ]
+  }
+]

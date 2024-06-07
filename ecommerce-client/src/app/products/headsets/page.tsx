@@ -9,11 +9,6 @@ export default function HeadsetsProductPage() {
         <SearchInput></SearchInput>
         <div className="row gap-5">
           <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
         </div>
       </div>
     </>

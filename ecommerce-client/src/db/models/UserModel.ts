@@ -18,13 +18,14 @@ type User = {
 };
 
 type LoginUser = {
+  _id: ObjectId;
   email: string;
   password: string;
 };
 
 const LoginUserSchema = z.object({
-  email: z.string({ required_error: "Email cannot be empty" }),
-  password: z.string({ required_error: "Password cannot be empty" }),
+  email: z.string({ required_error: "Please insert your email" }),
+  password: z.string({ required_error: "Please insert your password" }),
 });
 
 const NewUserSchema = z.object({

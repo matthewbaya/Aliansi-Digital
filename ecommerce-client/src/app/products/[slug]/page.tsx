@@ -29,6 +29,29 @@ export default async function ProductDetail({
         <img src={data.images[0]} alt="" />
         <h2>Specification</h2>
         <p>{data.description}</p>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colSpan={2}>Larry the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+
         <a href="" className="btn btn-primary">
           Add to wishlist
         </a>
