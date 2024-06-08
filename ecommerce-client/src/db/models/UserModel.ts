@@ -3,6 +3,7 @@ import { comparePassword, hashPassword } from "../helpers/bcrypt";
 import { z } from "zod";
 import { signToken } from "../helpers/jwt";
 import { ObjectId } from "mongodb";
+import { cookies } from "next/headers";
 
 type NewUser = {
   username: string;
@@ -53,7 +54,6 @@ class UserModel {
     const user = await this.collection().findOne({
       email: loginUser.email,
     });
-    console.log(user);
 
     if (!user) {
       throw { name: "InvalidLogin" };
@@ -62,21 +62,28 @@ class UserModel {
     if (!passwordVal) {
       throw { name: "InvalidLogin" };
     }
-    const access_token = signToken(user);
+
+    const access_token = signToken({
+      id: user._id,
+      email: user.email,
+      username: user.username,
+    });
+    cookies().set("Authorization", "Bearer " + access_token);
     return access_token;
   }
 
   static async registerUser(newUser: NewUser) {
-    const parseResult = NewUserSchema.safeParse(newUser);
-    if (!parseResult.success) {
-      console.log(parseResult.error);
-      throw parseResult.error;
-    }
     const existingUser = await this.collection().findOne({
       $or: [{ email: newUser.email }, { username: newUser.username }],
     });
+
     if (existingUser) {
       throw { name: "UserExists" };
+    }
+    const parseResult = NewUserSchema.safeParse(newUser);
+    if (!parseResult.success) {
+      // console.log(parseResult.error);
+      throw parseResult.error;
     }
 
     const user = await this.collection().insertOne({

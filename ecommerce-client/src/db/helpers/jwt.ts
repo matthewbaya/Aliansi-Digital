@@ -1,6 +1,6 @@
 import { JwtPayload, sign, verify } from "jsonwebtoken";
 
-const secret = "SECRETKEY";
+const secret = process.env.SECRET as string;
 
 function signToken(payload: JwtPayload) {
   return sign(payload, secret);

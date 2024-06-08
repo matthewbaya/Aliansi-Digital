@@ -1,10 +1,13 @@
 import UserModel from "@/db/models/UserModel";
+import { cookies } from "next/headers";
 import { ZodError } from "zod";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
     const access_token = await UserModel.loginUser(body);
+    console.log(cookies().getAll());
+
     return Response.json(
       {
         message: "Login Succesful",

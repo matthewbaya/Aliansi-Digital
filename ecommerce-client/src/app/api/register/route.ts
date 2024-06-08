@@ -4,7 +4,7 @@ import { ZodError } from "zod";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const user = await UserModel.registerUser(body);
+    await UserModel.registerUser(body);
 
     return Response.json(
       {
@@ -14,21 +14,19 @@ export async function POST(request: Request) {
       { status: 201 }
     );
   } catch (error: any) {
-    console.log(error.name);
-
-    if (error instanceof ZodError) {
+    if (error.name === "UserExists") {
       return Response.json(
         {
-          message: error.issues[0].message,
+          message: "User already exists",
         },
         { status: 400 }
       );
     }
 
-    if (error.name === "UserExists") {
+    if (error instanceof ZodError) {
       return Response.json(
         {
-          message: "User already exists",
+          message: error.issues[0].message,
         },
         { status: 400 }
       );
