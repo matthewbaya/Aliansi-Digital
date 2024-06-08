@@ -1,15 +1,36 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function RegisterPage() {
+  const handleRegister = async (formData: FormData) => {
+    "use server";
+    const email = formData.get("email");
+    const username = formData.get("username");
+    const password = formData.get("password");
+
+    const response = await fetch("http://localhost:3000/api/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json", //harus diberi content type karena body yang dikirim berupa json
+      },
+      body: JSON.stringify({ email, username, password }), //json stringify body
+    });
+    if (!response.ok) {
+      console.log(response);
+    }
+    const data = await response.json();
+    // console.log(data);
+    return redirect("/login");
+  };
   return (
     <>
       <div className="container w-50">
-        <h1 className="display-1 text-center">Hello</h1>
-        <form>
+        <h1 className="display-1 text-center">Register</h1>
+        <form action={handleRegister}>
           <div className="mb-3">
             <label className="form-label">Username</label>
             <input
-              type="email"
+              name="username"
               className="form-control"
               aria-describedby="emailHelp"
             />
@@ -19,6 +40,7 @@ export default function RegisterPage() {
               Email address
             </label>
             <input
+              name="email"
               type="email"
               className="form-control"
               id="exampleInputEmail1"
@@ -30,15 +52,16 @@ export default function RegisterPage() {
               Password
             </label>
             <input
+              name="password"
               type="password"
               className="form-control"
               id="exampleInputPassword1"
             />
           </div>
 
-          <Link href="/" type="submit" className="btn btn-primary">
-            Submit
-          </Link>
+          <button type="submit" className="btn btn-primary">
+            Register
+          </button>
         </form>
       </div>
     </>

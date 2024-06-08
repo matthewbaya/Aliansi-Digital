@@ -1,7 +1,6 @@
 import { error } from "console";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
-import Link from "next/link";
 
 export default function LoginPage() {
   const handleLogin = async (formData: FormData) => {
