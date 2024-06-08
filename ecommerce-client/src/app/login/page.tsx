@@ -1,6 +1,7 @@
 import { error } from "console";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
+import ClientFlashComponent from "@/components/ClientFlashComponent";
 
 export default function LoginPage() {
   const handleLogin = async (formData: FormData) => {
@@ -17,12 +18,14 @@ export default function LoginPage() {
       },
       body: JSON.stringify({ email, password }), //json stringify body
     });
-    if (!response.ok) {
-      console.log(error);
-    }
-
     //await result agar data terlihat lebih jelas
     const data = await response.json();
+    if (!response.ok) {
+      //handle error
+
+      return redirect("/login?error=" + data.message);
+    }
+
     //kalau pakai server action, harus set cookies lagi
     cookies().set("Authorization", "Bearer " + data.access_token);
 
@@ -33,6 +36,7 @@ export default function LoginPage() {
     <>
       <div className="w-50 container border">
         <h1 className="display-1 text-center">Login</h1>
+        <ClientFlashComponent></ClientFlashComponent>
         <form action={handleLogin} method="POST">
           <div className="mb-3">
             <label className="form-label">Email address</label>

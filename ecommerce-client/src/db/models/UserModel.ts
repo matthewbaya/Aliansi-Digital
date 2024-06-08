@@ -38,7 +38,7 @@ const NewUserSchema = z.object({
     .email({ message: "Invalid email address" }),
   password: z
     .string({ required_error: "Password cannot be empty" })
-    .min(5, { message: "Must be 5 or more characters long" }),
+    .min(5, { message: "Password Must be 5 or more characters long" }),
 });
 class UserModel {
   static collection() {
@@ -82,7 +82,7 @@ class UserModel {
     }
     const parseResult = NewUserSchema.safeParse(newUser);
     if (!parseResult.success) {
-      // console.log(parseResult.error);
+      console.log(parseResult.error.errors);
       throw parseResult.error;
     }
 

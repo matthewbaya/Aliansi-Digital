@@ -1,3 +1,4 @@
+import ClientFlashComponent from "@/components/ClientFlashComponent";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
@@ -20,12 +21,13 @@ export default function RegisterPage() {
     }
     const data = await response.json();
     // console.log(data);
-    return redirect("/login");
+    return redirect("/register?error=" + data.message);
   };
   return (
     <>
       <div className="container w-50">
         <h1 className="display-1 text-center">Register</h1>
+        <ClientFlashComponent></ClientFlashComponent>
         <form action={handleRegister}>
           <div className="mb-3">
             <label className="form-label">Username</label>
