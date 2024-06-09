@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Banner></Banner>
       <DetailInfo></DetailInfo>
+      <h1 className="text-center mb-5">Featured Product</h1>
       <div className="container d-flex flex-wrap gap-5 justify-content-center">
         <FeaturedProduct></FeaturedProduct>
         <FeaturedProduct></FeaturedProduct>

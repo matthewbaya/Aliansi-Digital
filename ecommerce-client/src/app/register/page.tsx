@@ -9,13 +9,16 @@ export default function RegisterPage() {
     const username = formData.get("username");
     const password = formData.get("password");
 
-    const response = await fetch("http://localhost:3000/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json", //harus diberi content type karena body yang dikirim berupa json
-      },
-      body: JSON.stringify({ email, username, password }), //json stringify body
-    });
+    const response = await fetch(
+      process.env.NEXT_PUBLIC_BASE_URL + "/api/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", //harus diberi content type karena body yang dikirim berupa json
+        },
+        body: JSON.stringify({ email, username, password }), //json stringify body
+      }
+    );
     if (!response.ok) {
       console.log(response);
     }

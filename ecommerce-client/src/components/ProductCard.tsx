@@ -1,11 +1,13 @@
+"use client";
 import { Product } from "@/types";
 import Link from "next/link";
+import AddWishlistButton from "./AddWishlistButton";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="card col-3">
       <img
-        src={product.images[0]}
+        src={product.thumbnail}
         className="card-img-top"
         alt="Fissure in Sandstone"
       />
@@ -20,9 +22,7 @@ export default function ProductCard({ product }: { product: Product }) {
           >
             Detail
           </Link>
-          <a href="#" className="btn btn-primary">
-            add to wishlist
-          </a>
+          <AddWishlistButton productId={product._id}></AddWishlistButton>
         </div>
       </div>
     </div>

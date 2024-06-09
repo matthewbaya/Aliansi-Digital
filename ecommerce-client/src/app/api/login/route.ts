@@ -5,8 +5,9 @@ import { ZodError } from "zod";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
+
     const access_token = await UserModel.loginUser(body);
-    console.log(cookies().getAll());
+    // console.log(cookies().getAll());
 
     return Response.json(
       {

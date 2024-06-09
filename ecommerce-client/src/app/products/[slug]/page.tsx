@@ -1,12 +1,11 @@
 import { Product } from "@/types";
 
 async function getDataDetail(slug: string): Promise<Product> {
-  const res = await fetch("http://localhost:3001/products?slug=" + slug);
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
+  const res = await fetch(
+    process.env.NEXT_PUBLIC_BASE_URL + "/api/products/" + slug
+  );
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
 
@@ -20,33 +19,34 @@ export default async function ProductDetail({
 }) {
   console.log(params);
   let data = await getDataDetail(params.slug);
-  data = data[0];
-  console.log(data);
+  // data = data[0];
 
   return (
     <>
       <div className="container">
         <img src={data.images[0]} alt="" />
+        <img src={data.images[1]} alt="" />
+        <img src={data.images[2]} alt="" />
         <h2>Specification</h2>
-        <p>{data.description}</p>
+        {/* <p>{data.description}</p> */}
         <table className="table">
           <thead>
             <tr>
-              <th scope="col">First</th>
+              <th scope="col">Description</th>
               <th scope="col">Last</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">Model</th>
               <td>Mark</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <th scope="row">Color</th>
               <td>Jacob</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <th scope="row">Shape</th>
               <td colSpan={2}>Larry the Bird</td>
             </tr>
           </tbody>

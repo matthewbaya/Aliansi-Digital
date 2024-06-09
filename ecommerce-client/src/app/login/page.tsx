@@ -11,13 +11,16 @@ export default function LoginPage() {
     const email = formData.get("email");
     const password = formData.get("password");
     //fetch data dari api
-    const response = await fetch("http://localhost:3000/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json", //harus diberi content type karena body yang dikirim berupa json
-      },
-      body: JSON.stringify({ email, password }), //json stringify body
-    });
+    const response = await fetch(
+      process.env.NEXT_PUBLIC_BASE_URL + "/api/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", //harus diberi content type karena body yang dikirim berupa json
+        },
+        body: JSON.stringify({ email, password }), //json stringify body
+      }
+    );
     //await result agar data terlihat lebih jelas
     const data = await response.json();
     if (!response.ok) {

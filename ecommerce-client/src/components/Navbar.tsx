@@ -1,3 +1,5 @@
+"use client";
+import { logout } from "@/app/action";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -37,7 +39,7 @@ export default function Navbar() {
                   All Products
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" href="/products/mice">
                   Mice
                 </Link>
@@ -56,7 +58,7 @@ export default function Navbar() {
                 <Link className="nav-link" href="/products/mousepads">
                   Mousepads
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" href="/wishlist">
                   Wishlist
@@ -67,6 +69,14 @@ export default function Navbar() {
           </div>
           {/* Collapsible wrapper */}
           {/* Right elements */}
+          <button
+            className="btn btn-warning"
+            onClick={() => {
+              logout();
+            }}
+          >
+            Logout
+          </button>
           <div className="d-flex align-items-center">
             {/* Icon */}
             <a className="text-reset me-3" href="#">
